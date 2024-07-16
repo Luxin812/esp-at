@@ -12,3 +12,4 @@ idf_component_register(
     REQUIRES ${require_components})
 
 target_link_libraries(${COMPONENT_LIB} INTERFACE "-u esp_at_custom_cmd_register")
+target_link_libraries(${COMPONENT_LIB} INTERFACE "-u esp_at_custom_cmd_register2")
