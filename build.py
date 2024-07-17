@@ -396,6 +396,10 @@ def setup_env_variables():
     idf_path=os.path.join(os.getcwd(), 'esp-idf')
     os.environ['IDF_PATH']=idf_path
 
+    # set AT_CUSTOM_COMPONENTS
+    at_custom_cmd_path=os.path.join(os.getcwd(), 'examples/at_custom_cmd')
+    os.environ['AT_CUSTOM_COMPONENTS']=at_custom_cmd_path
+
     # get ESP-IDF toolchain path and virtual python path
     print('PATH is {}'.format(os.environ.get('PATH')))
     print('IDF_PYTHON_ENV_PATH is {}'.format(os.environ.get('IDF_PYTHON_ENV_PATH')))
